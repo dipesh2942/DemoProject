@@ -2,4 +2,5 @@
     <string name="app_name">DemoProject</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">50d7486c-ef91-42f0-bad3-5926e2d6df0c</string>
 </resources>

@@ -12,7 +12,7 @@
     "android:clean:win32": "cd android && gradlew clean",
     "android:clean:macos": "cd android && ./gradlew clean",
     "android:bundle": "run-script-os",
-    "android:bundle:win32": "cd android && gradlew bundleRelease",
+    "android:bundle:win32": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle && cd android && gradlew bundleRelease",
     "android:bundle:macos": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle && cd android && ./gradlew bundleRelease",
     "android:build": "node buildapk.js",
     "ios:bundle:win32": "echo Sorry, iOS Bundle requires Mac System",

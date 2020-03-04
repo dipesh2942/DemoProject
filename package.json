@@ -8,7 +8,15 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "android:build": "node buildapk.js"
+    "android:clean": "run-script-os",
+    "android:clean:win32": "cd android && gradlew clean",
+    "android:clean:macos": "cd android && ./gradlew clean",
+    "android:bundle": "run-script-os",
+    "android:bundle:win32": "cd android && gradlew bundleRelease",
+    "android:bundle:macos": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle && cd android && ./gradlew bundleRelease",
+    "android:build": "node buildapk.js",
+    "ios:bundle:win32": "echo Sorry, iOS Bundle requires Mac System",
+    "ios:bundle:macos": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -23,7 +31,8 @@
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.58.0",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "run-script-os": "^1.1.1"
   },
   "jest": {
     "preset": "react-native"

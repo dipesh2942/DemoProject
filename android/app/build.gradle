@@ -81,7 +81,7 @@ project.ext.react = [
     bundleAssetName    : "index.android.bundle",
     bundleInDebug      : false,
     bundleInRelease    : true,
-    jsBundleDirRelease: "$buildDir/intermediates/assets/release",
+    jsBundleDirRelease : "/src/main/assets",
     root               : "../../",
 ]
 

@@ -2,7 +2,7 @@
     <string name="app_name">DemoProject</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey">50d7486c-ef91-42f0-bad3-5926e2d6df0c</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">c65bVLmXmDMhJ5C1DE1AOZtbo2F4KoHsI2Snj</string>
     <string name="CodePushPublicKey">-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtPSR9lkGzZ4FR0lxF+ZA
 P6jJ8+Xi5L601BPN4QESoRVSrJM08roOCVrs4qoYqYJy3Of2cQWvNBEh8ti3FhHu

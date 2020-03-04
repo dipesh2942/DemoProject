@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import codePush from "react-native-code-push";
 
 class App extends Component {
   constructor(props) {
@@ -8,13 +9,25 @@ class App extends Component {
     };
   }
 
+  onButtonPress = () => {
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+    });
+  }
+
   render() {
     return (
       <View>
-        <Text> This is my demo App </Text>
+        <TouchableOpacity onPress={this.onButtonPress}>
+          <Text>Check for updates</Text>
+        </TouchableOpacity>
       </View>
-    );
+    )
   }
 }
+
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
+App = codePush(codePushOptions)(App);
 
 export default App;

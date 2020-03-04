@@ -22,6 +22,8 @@ class App extends Component {
         <TouchableOpacity onPress={this.onButtonPress}>
           <Text>Check for updates</Text>
         </TouchableOpacity>
+
+        <Text> This is Updated Text After Taking Update AutoMatically </Text>
       </View>
     )
   }

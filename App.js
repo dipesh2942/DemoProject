@@ -13,7 +13,7 @@ class App extends Component {
     codePush.sync({
       updateDialog: true,
       installMode: codePush.InstallMode.IMMEDIATE
-    });
+    }).catch((e) => console.warn(e.message));
   }
 
   render() {
@@ -24,6 +24,7 @@ class App extends Component {
         </TouchableOpacity>
 
         <Text> This is Updated Text After Taking Update AutoMatically </Text>
+        <Text> This is Updated Text After Taking Update AutoMatically ye ye </Text>
       </View>
     )
   }

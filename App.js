@@ -24,7 +24,7 @@ class App extends Component {
         </TouchableOpacity>
 
         <Text> This is Updated Text After Taking Update AutoMatically </Text>
-        <Text> This is Updated Text After Taking Update AutoMatically ye ye </Text>
+        <Text> This is Updated  </Text>
       </View>
     )
   }
